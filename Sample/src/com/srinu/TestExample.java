@@ -17,7 +17,7 @@ public class TestExample{
 
 	public void runMethod(int n) {
 
-		//synchronized (this) {
+		synchronized (this) {
 			for(int i =1; i < 10; i++){
 				System.out.println(n*i);
 				 try{  
@@ -25,7 +25,7 @@ public class TestExample{
 				      }catch(Exception e){System.out.println(e);}
 			}
 			
-		//}
+		}
 	}
 
 	
